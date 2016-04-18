@@ -15,7 +15,7 @@
 	</target>
 		
 	<target name="compile" depends="init" description="Compile Java Code">
-		<javac srcdir="src" destdir="build/classes"/>
+		<javac srcdir="src" destdir="build/classes" includeantruntime="false"/>
 	</target>
 	
 	<target name="package" depends="compile" description="Generate JAR file">
